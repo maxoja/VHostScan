@@ -34,6 +34,11 @@ class cli_argument_parser(object):
         )
 
         parser.add_argument(
+            '--no-color', dest='no_color', action='store_true', default=False,
+            help='Disable colorization on interface.'
+        )
+
+        parser.add_argument(
             '-p', dest='port', default=80, type=int,
             help='Set the port to use (default 80).'
         )
